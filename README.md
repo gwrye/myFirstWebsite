@@ -1,1 +1,1 @@
-# myFirstWebsite
+# My website showcases different track coaches available in the Carrolton area for any users to take lessons from. Users are able to pick one of our three coaches and sign up to take a lesson from them. 
