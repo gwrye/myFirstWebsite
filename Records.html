@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Records</title>
+    <meta name="description" content="Page dedicated to letting the user keep track of their own personal track PR's.">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="Home.html">Home</a>
+        <a href="Profile.html">Coaches</a>
+        <a href="Records.html">Records</a>
+    </div>
+
+    <h1>Track Your Personal Records</h1>
+    <form id="prForm">
+        <label for="event">Event:</label>
+        <select id="event" required>
+            <option value="" disabled selected>Select an event</option>
+            <option value="100m Dash">100m Dash</option>
+            <option value="200m Dash">200m Dash</option>
+            <option value="400m Dash">400m Dash</option>
+            <option value="800m Run">800m Run</option>
+            <option value="1500m Run">1500m Run</option>
+            <option value="5000m Run">5000m Run</option>
+            <option value="Marathon">Marathon</option>
+            <option value="High Jump">High Jump</option>
+            <option value="Long Jump">Long Jump</option>
+            <option value="Shot Put">Shot Put</option>
+        </select>
+        
+        <label for="time">Time:</label>
+        <input type="text" id="time" required>
+        
+        <button type="submit">Add PR</button>
+    </form>
+
+    <h2>Your PRs</h2>
+    <table id="prTable">
+      <thead>
+          <tr>
+              <th>Event</th>
+              <th>Time</th>
+          </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+    <script src="input.js"></script>
+</body>
+</html>
